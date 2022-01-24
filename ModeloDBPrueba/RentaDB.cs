@@ -11,7 +11,7 @@ namespace ModeloDBPrueba
     public class RentaDB:DbContext
 
     {
-        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Rental> Rentals { get; set; }
         override protected void OnConfiguring(DbContextOptionsBuilder options)
@@ -30,13 +30,13 @@ namespace ModeloDBPrueba
 
         }
 
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Payment>()
                 .HasOne<Customer>(s => s.Customer)
                 .WithMany(g => g.Payments)
                 .HasForeignKey(s => s.payment_id);
            
-        }*/
+        }
     }
 }

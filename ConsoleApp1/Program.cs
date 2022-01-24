@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ModeloPrubea.Entidades;
+using System;
+
 
 namespace ConsoleApp1
 {
@@ -7,6 +9,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Customer customers = new Customer() { first_name = "Juan" };
+
         }
     }
 }

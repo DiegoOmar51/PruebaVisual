@@ -17,7 +17,7 @@ namespace ModeloPrubea.Entidades
         public DateTime create_date { get; set; }
         public DateTime last_update { get; set; }
         public Boolean activate { get; set; }
-        //public ICollection<Payment> Payments { get; set; }
+        public ICollection<Payment> Payments { get; set; }
 
 
     }

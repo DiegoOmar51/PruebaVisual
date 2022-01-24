@@ -11,7 +11,7 @@ namespace ModeloPrubea.Entidades
         public int rental_id { get; set; }
         public DateTime rental_date { get; set; }
         public int inventory_id { get; set; }
-        //public Customer Customer { get; set; }
+        public Customer Customer { get; set; }
         public int customer_id { get; set; }
         public DateTime return_date { get; set; }
         public int staff_id { get; set; }
