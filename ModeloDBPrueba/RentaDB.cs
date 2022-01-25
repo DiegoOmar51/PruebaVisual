@@ -33,9 +33,9 @@ namespace ModeloDBPrueba
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Payment>()
-                .HasOne<Customer>(s => s.Customer)
-                .WithMany(g => g.Payments)
-                .HasForeignKey(s => s.payment_id);
+                .HasOne<Customer>(ct => ct.Customer)
+                .WithMany(py => py.Payments)
+                .HasForeignKey(ct => ct.payment_id);
            
         }
     }
